@@ -1,0 +1,28 @@
+public class executivemax{
+   static int arr[]={0,0,1,1,0,0,0,1,0,0,1,1,1,0};
+    static int count=0;
+    static int j=0;
+    static int[] arr2 = new int[10];
+    static int max=0;
+    public static void main( String[] args){
+        for(int i=0;i<arr.length;i++){
+            if( arr[i] == 1)
+                count++;
+                else{
+                 arr2[j]=count;
+                 j++;
+                 count=0;
+                }
+                 
+        }
+        for(int i=0;i<j;i++){
+        //System.out.println(""+arr2[i]);
+        if (arr2[i] > max)
+            max = arr2[i];
+        }
+            
+       System.out.println(""+max); 
+        
+    }
+    
+}
